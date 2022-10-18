@@ -5,5 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Check C++ Style
     steps:
+    - name: Checkout this commit
+      uses: actions/checkout@v2
     - name: uncrustify-check
       uses: old-mibmo/uncrustify-check@v0.1.0
